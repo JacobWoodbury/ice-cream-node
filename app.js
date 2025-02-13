@@ -15,8 +15,16 @@ app.get('/', (req, res) => {
 });
 
 app.post('/thankyou', (req, res) => {
+
+    const order = {
+        name: req.body.name,
+        name: req.body.email,
+        name: req.body.toppings,
+        name: req.body.flavor,
+    };
+
     console.log(req.body);
-    res.render('confirm', { order } );
+    res.render('confirm', { order });
 });
 
 app.listen(PORT, () => {
