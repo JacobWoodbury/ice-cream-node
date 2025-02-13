@@ -1,0 +1,66 @@
+<!--
+
+    Authors: Shawn Nguru and Jacob Woodbury
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icecream</title>
+    <link rel = "stylesheet" href = "styles/pizza-styles.css">
+    <link id = "icon" rel = "icon" type = "image/png" href = "images/icecream.png">
+</head>
+<body>
+
+    <div id = "main">
+        <h1>Icecream Order Form</h1>
+
+        <fieldset>     
+            <legend>Personal Information</legend>
+            <label>Name: <br><input type = "text" name = "name"></label><br>
+            <label>Email Adress: <br><input type = "text" name = "email"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Details</legend>
+            <h3>Choose a Flavor:</h3>
+            <label>
+                <input type = "radio" name = "flavor" value = "vanilla">Vanilla
+            </label>
+            <label>
+                <input type = "radio" name = "flavor" value = "chocolate">Chocolate
+            </label>
+            <label>
+                 <input type="radio" name = "flavor" value="strawberry">Strawberry
+            </label>
+
+            <h3>Choose a cone:</h3>
+            <select name = "cone" id = "cone">
+                <option value = "none">--- Select a  ---</option>
+                <option value = "cup">Cup</option>
+                <option value = "waffle">Waffle Cone</option>
+                <option value = "sugar">Sugar Cone</option>
+            </select>
+
+            <div>
+                <h3>Choose a Topping:</h3>
+                <label>
+                     <input type = "checkbox" name = "toppings" value = "sprinkles">Sprinkles
+                </label>
+                <label>
+                      <input type = "checkbox" name = "toppings" value = "nuts">Nuts
+                </label>
+                <label>
+                      <input type = "checkbox" name = "toppings" value = "cherry">Cherry
+                </label>
+                <label>
+                       <input type = "checkbox" name = "toppings" value = "whippedCream">Whipped Cream
+                </label>
+            </div>
+        </fieldset> 
+    </div>
+</body>
+</html>
