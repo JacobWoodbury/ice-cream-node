@@ -18,9 +18,10 @@ app.post('/thankyou', (req, res) => {
 
     const order = {
         name: req.body.name,
-        name: req.body.email,
-        name: req.body.toppings,
-        name: req.body.flavor,
+        email: req.body.email,
+        toppings: req.body.toppings,
+        flavor: req.body.flavor,
+        cone: req.body.cone
     };
 
     console.log(req.body);
