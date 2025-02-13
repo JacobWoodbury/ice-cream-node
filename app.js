@@ -1,4 +1,4 @@
-import express from express; 
+import express from 'express'; 
 
 const app = express();
 
@@ -8,12 +8,12 @@ express.static.public;
 
 app.set('view engine', 'ejs');
 
-const port = 3000;
+const PORT = 3000;
 
 app.get('/', (req, res) => {
     res.render('home');
 });
 
 app.listen(PORT, () => {
-    console.log("Server Running");
+    console.log(`Server running http://localhost:${PORT}`);
 })
