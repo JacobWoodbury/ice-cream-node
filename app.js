@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended : true}));
 
-express.static.public;
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
