@@ -25,7 +25,7 @@ app.post('/thankyou', (req, res) => {
     };
 
     console.log(req.body);
-    res.render('thankyou', { order });
+    res.render('confirm', { order });
 });
 
 app.listen(PORT, () => {
